@@ -84,7 +84,7 @@ if provider == "Google Gemini (Free)":
         save_cached_key("gemini", api_key_input)
     api_key = api_key_input
     st.sidebar.info("💡 [Get a Free Gemini Key](https://aistudio.google.com/app/apikey)")
-    model_choice = st.sidebar.selectbox("Model", ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-2.0-flash"])
+    model_choice = st.sidebar.selectbox("Model", ["gemini-3.8-flash", "gemini-2.5-flash", "gemini-2.5-pro", "gemini-1.5-flash", "gemini-1.5-pro"])
     endpoint_url = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 
 elif provider == "Groq (Free)":
